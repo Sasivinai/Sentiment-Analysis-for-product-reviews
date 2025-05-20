@@ -1,0 +1,100 @@
+/* Main Styles for ChatGPT Sentiment Analysis Application */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.chart-container {
+    height: 400px;
+    width: 100%;
+}
+
+/* Sentiment badges styling */
+#sentiment-badge {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#sentiment-badge.positive {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#sentiment-badge.neutral {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#sentiment-badge.negative {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Form elements */
+textarea.form-control {
+    resize: none;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 8px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+    transform: translateY(-2px);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Dashboard specific styles */
+.list-group-item {
+    border-left: none;
+    border-right: none;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid #dee2e6;
+    margin-top: 2rem;
+}
